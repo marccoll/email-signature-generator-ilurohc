@@ -1,3 +1,8 @@
+## Based:
+
+[https://github.com/chancesmith/Email-Signature-Generator](https://github.com/chancesmith/Email-Signature-Generator)
+
+
 # Simple SPA for email-signature generation.
 
 [Original medium post](https://al3xsus.medium.com/how-to-create-a-signature-generating-app-with-react-ffeb2f2201cc)
