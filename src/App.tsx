@@ -251,7 +251,7 @@ function App() {
       <Typography variant="h4" gutterBottom className={classes.centeredText} style={{margin: "3em 0 0"}}>
         Generador de firmes
       </Typography>
-      <p className={classes.centeredText} style={{marginBottom: "4em"}}>Còpia l'html i enganxa-ho al teu client de correu. Si tens dubtes Sant Google és el teu amic.</p>
+      <p className={classes.centeredText} style={{marginBottom: "4em"}}>Afegeix les teves dades, còpia l'html i enganxa'l al teu client de correu. Si tens dubtes Sant Google és el teu amic.</p>
       
       <Grid container spacing={3}>
         <Grid item xs={6}>
