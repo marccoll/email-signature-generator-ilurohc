@@ -19,6 +19,7 @@ import ReactDOMServer from "react-dom/server";
 import DownloadIcon from "@mui/icons-material/Download";
 import CircularProgressWithLabel from "./CircularProgressWithLabel";
 import Signature from "./Signature";
+import copy from 'copy-to-clipboard';
 
 const useStyles = makeStyles((theme: Theme) =>
   // Styles for the web app
@@ -176,7 +177,16 @@ function App() {
   const copyToClipboard = () => {
     let copyText = document.querySelector(".signature");
     console.log(copyText)
-    const inner = document.querySelector(".signature")?.innerHTML || "a";
+    const inner = document.querySelector(".signature")?.innerHTML || "a"
+    copy(inner, {
+      format: 'text/html'
+    })
+    setState((prevState) => ({
+      ...prevState,
+      copied: true,
+    }))
+
+    /*
 
     const range = document.createRange();
     if (copyText) {
@@ -198,7 +208,7 @@ function App() {
       }));
     } catch (err) {
       console.log("Fail");
-    }
+    }*/
   };
 
   const downloadHtmlFile = () => {
